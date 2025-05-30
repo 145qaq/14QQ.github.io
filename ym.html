@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>消除桃乐丝</title>
+    <link rel="stylesheet" href="样式.css">
+</head>
+
+<body>
+    <div id="header">
+        <p>消除桃乐丝(私人版)</p> 
+        <div style="text-align: center">
+            <P id="time" style="color: red;">剩余时间：<span>变量</span></P>
+            <p id="count">按键个数：<span>变量</span></p>
+            <button id="start-btn" onclick="startGame()">开始游戏</button>
+        </div>
+    </div>
+
+    <div id="box">
+        <!-- 游戏区域
+ <div></div>
+ <div></div>
+ <div></div>
+ <div></div>
+ <div></div>
+ <div></div>
+ <div></div>
+ <div></div>
+ <div></div>
+ <div></div>
+ <div></div>
+ <div></div>
+ <div></div>
+ <div></div>
+ <div></div>
+ <div></div>
+ <div></div>
+ <div></div>
+ <div></div>
+ <div></div>
+    这些div不能写在这里，如果写在这里就是死的，没有逻辑 -->
+    </div>
+
+    <audio id="bgm" src="bgm.m4a"></audio>
+
+    <script src="初始化.js"></script>
+    <script src="操作脚本.js"></script>
+    <video class="bg-video" autoplay loop muted>
+        <source src="vd.mp4" type="video/mp4">
+
+    </video>
+    <div class="final-victory">
+    <video class="victory-video" autoplay loop muted playsinline >
+        <source src="victory.mp4" type="video/mp4">
+    </video>
+    <div class="victory-panel">
+        <h1>🎉 终极胜利！</h1>
+        <button onclick="backToMenu()">返回主菜单</button>
+    </div>
+  
+    <audio id="victory-bgm" src="victory.mp4" autoplay loop></audio>
+</div>
+</body>
+
+</html>
